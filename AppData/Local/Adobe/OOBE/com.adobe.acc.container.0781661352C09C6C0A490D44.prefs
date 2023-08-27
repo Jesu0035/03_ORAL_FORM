@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<prefs>
+	<property key="ARSGuid">2efe93eb-bec8-4d34-81fc-70fcb09b48ed</property>
+	<property key="CCD_MARKETPLACE_STATUS_LIGHT">OFF</property>
+	<property key="appsPanelVisibilityAnalytics">enabled</property>
+	<property key="ccd.container.whatsNewModal.onboarding-whatsnew1">onboarding-whatsnew1</property>
+	<property key="CCD_MARKETPLACE_NEW_STATUS_LIGHT">OFF</property>
+	<property key="ccd.container.whatsNewModal.onboarding-quickactions-max">onboarding-quickactions-max</property>
+	<property key="PushDeviceID">0553d59a-535b-480c-8456-168a61b83c41</property>
+	<property key="CCDHome_STATUS_LIGHT">true</property>
+	<property key="ccd.container.whatsNewModal.ccd-ps-beta-launch-2023-05">ccd-ps-beta-launch-2023-05</property>
+	<property key="ccd.container.whatsNewModal.Express-beta-activation-modal-06-2023">Express-beta-activation-modal-06-2023</property>
+	<property key="ccd.container.firstlaunch">true</property>
+</prefs>
