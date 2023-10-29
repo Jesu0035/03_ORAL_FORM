@@ -1,0 +1,46 @@
+'use strict';
+
+document.querySelector('#cd-form').addEventListener('submit', 
+function(e) {e.preventDefault();
+
+    const author = e.target.txtAuthor.value;
+    const title = e.target.txtTitle.value;
+    const year = parseInt(e.target.txtYear.value);
+
+
+        //The row is created in browser memory
+
+    const trNew = document.createElement('tr');
+    
+    const tdAuthor = document.createElement('td');
+    tdAuthor.appendChild(document.createTextNode(author));
+    trNew.appendChild(tdAuthor);
+
+    const tdTitle = document.createElement('td');
+    tdTitle.appendChild(document.createTextNode(title));
+    trNew.appendChild(tdTitle);
+
+    const tdYear = document.createElement('td');
+    tdYear.appendChild(document.createTextNode(year));
+    tdYear.classList.add('right');
+    trNew.appendChild(tdYear);
+    
+    const imgDelete = document.createElement('img');
+    imgDelete.classList.add('delete');
+    // When the delete icon is clicked, the whole row (the <tr>) is removed
+    imgDelete.addEventListener('click', function() {
+        this.parentElement.parentElement.remove();
+    });
+
+    const tdDelete = document.createElement('td');    
+    tdDelete.appendChild(imgDelete);
+    tdDelete.classList.add('right');
+    trNew.appendChild(tdDelete);
+
+    
+    document.querySelector('table > tbody').appendChild(trNew);
+
+    document.querySelector('table').style.visibility = 'visible';
+
+    this.reset();  
+});
